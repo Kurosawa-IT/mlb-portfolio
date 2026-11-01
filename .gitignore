@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.kernel/
+.jupyter/
+*.egg-info/
+build/
+dist/
+data/raw/*
+!data/raw/.gitkeep
+
