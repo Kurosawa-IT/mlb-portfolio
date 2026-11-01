@@ -1,0 +1,8 @@
+{
+  "comparison": "rf_leaf50 minus training_mean",
+  "metric": "RMSE",
+  "lower95": -0.09234179083049271,
+  "upper95": 0.00209510352703283,
+  "clusters": 595,
+  "bootstrap": 400
+}

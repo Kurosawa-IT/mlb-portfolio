@@ -1,0 +1,8 @@
+{
+  "comparison": "rf_leaf50 minus previous_ERA",
+  "metric": "RMSE",
+  "lower95": -0.31439253713859255,
+  "upper95": -0.13971359252444981,
+  "clusters": 595,
+  "bootstrap": 400
+}

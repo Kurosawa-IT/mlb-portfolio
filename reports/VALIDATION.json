@@ -1,0 +1,129 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "notebooks": [
+    {
+      "file": "01_whiff.ipynb",
+      "executed_code_cells": 4,
+      "embedded_images": 5,
+      "errors": 0
+    },
+    {
+      "file": "02_hr.ipynb",
+      "executed_code_cells": 4,
+      "embedded_images": 4,
+      "errors": 0
+    },
+    {
+      "file": "03_era.ipynb",
+      "executed_code_cells": 4,
+      "embedded_images": 4,
+      "errors": 0
+    }
+  ],
+  "whiff": {
+    "validation_selected": "rf_leaf20",
+    "test_results": [
+      {
+        "task": "whiff",
+        "model": "rf_leaf20",
+        "split": "test",
+        "n_train": 53691,
+        "n_eval": 29771,
+        "ROC_AUC": 0.7677545634298744,
+        "PR_AUC_AP": 0.5596663655643457,
+        "log_loss": 0.44070233444083556,
+        "Brier": 0.13881491652166936,
+        "accuracy_0.5": 0.8137113298176077
+      },
+      {
+        "task": "whiff",
+        "model": "baseline_mean",
+        "split": "test",
+        "n_train": 53691,
+        "n_eval": 29771,
+        "ROC_AUC": 0.5,
+        "PR_AUC_AP": 0.22407712203150718,
+        "log_loss": 0.5322082549525184,
+        "Brier": 0.17393313784692635,
+        "accuracy_0.5": 0.7759228779684928
+      }
+    ],
+    "finite_inference": true
+  },
+  "hr": {
+    "validation_selected": "rf_leaf50",
+    "test_results": [
+      {
+        "task": "hr",
+        "model": "rf_leaf50",
+        "split": "test",
+        "n_train": 19887,
+        "n_eval": 11132,
+        "ROC_AUC": 0.9823453203775644,
+        "PR_AUC_AP": 0.7111873895171559,
+        "log_loss": 0.06303980277313652,
+        "Brier": 0.019689989479992606,
+        "accuracy_0.5": 0.9724218469277758
+      },
+      {
+        "task": "hr",
+        "model": "baseline_mean",
+        "split": "test",
+        "n_train": 19887,
+        "n_eval": 11132,
+        "ROC_AUC": 0.5,
+        "PR_AUC_AP": 0.04096298957959037,
+        "log_loss": 0.17099864143270024,
+        "Brier": 0.03928549286667717,
+        "accuracy_0.5": 0.9590370104204097
+      }
+    ],
+    "finite_inference": true
+  },
+  "era": {
+    "validation_selected": "rf_leaf50",
+    "test_results": [
+      {
+        "task": "era",
+        "model": "rf_leaf50",
+        "split": "test",
+        "n_train": 1646,
+        "n_eval": 901,
+        "MAE": 1.7362657064616926,
+        "RMSE": 3.452025296883316
+      },
+      {
+        "task": "era",
+        "model": "baseline_mean",
+        "split": "test",
+        "n_train": 1646,
+        "n_eval": 901,
+        "MAE": 1.7747623233976115,
+        "RMSE": 3.5027067266425402
+      },
+      {
+        "task": "era",
+        "model": "previous_ERA",
+        "split": "test",
+        "n_train": 1646,
+        "n_eval": 901,
+        "MAE": 1.853773495327205,
+        "RMSE": 3.6531757706431836
+      }
+    ],
+    "finite_inference": true
+  },
+  "source_syntax": "passed",
+  "pytest": "7 passed",
+  "package_install": "pip install --no-deps -e outputs/mlb-portfolio succeeded",
+  "dependency_check": "pip check: No broken requirements found",
+  "submission_revision": "2026-11-01: Notebook descriptions revised for submission; Python comments and docstrings translated into Japanese; all notebooks re-executed. Experiment tables match previous results within 1e-12 numerical tolerance (maximum observed difference 4.45e-16).",
+  "execution": "All notebooks executed sequentially with exit code 0; HR re-executed after numerical covariance fix with exit code 0.",
+  "not_verified": [
+    "Other OS execution",
+    "Fresh independent environment",
+    "External-year generalization",
+    "Future data source compatibility",
+    "Data redistribution permission"
+  ]
+}

@@ -1,0 +1,8 @@
+task,model,split,n_train,n_eval,features,ROC_AUC,PR_AUC_AP,log_loss,Brier,accuracy_0.5
+whiff,baseline_mean,validation,53691,26906,"release_speed,plate_x,z_norm,balls,strikes,pitch_type,p_throws,stand",0.5,0.22455957778934066,0.5327851401019074,0.1741915061098566,0.7754404222106593
+whiff,logistic_basic,validation,53691,26906,"release_speed,plate_x,z_norm,balls,strikes,pitch_type,p_throws,stand",0.6458245756189293,0.4788706988222073,0.504989212211428,0.1608554106173539,0.7873336802200253
+whiff,logistic_extended,validation,53691,26906,"release_speed,plate_x,z_norm,balls,strikes,speed_x_z,release_spin_rate,pfx_x,pfx_z,pitch_type,p_throws,stand",0.6898790283582408,0.47684283953487255,0.48426166672304644,0.15361738262448985,0.7972199509403107
+whiff,rf_leaf20,validation,53691,26906,"release_speed,plate_x,z_norm,balls,strikes,speed_x_z,release_spin_rate,pfx_x,pfx_z,pitch_type,p_throws,stand",0.769748495259665,0.5739992924164137,0.43685444619564623,0.13700007985285062,0.8179959860254218
+whiff,rf_leaf50,validation,53691,26906,"release_speed,plate_x,z_norm,balls,strikes,speed_x_z,release_spin_rate,pfx_x,pfx_z,pitch_type,p_throws,stand",0.766279567757294,0.5678964194118346,0.4414154639459465,0.1385164958530245,0.8153200029733145
+whiff,rf_leaf20,test,53691,29771,,0.7677545634298744,0.5596663655643457,0.44070233444083556,0.13881491652166936,0.8137113298176077
+whiff,baseline_mean,test,53691,29771,,0.5,0.22407712203150718,0.5322082549525184,0.17393313784692635,0.7759228779684928

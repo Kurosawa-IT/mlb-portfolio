@@ -1,0 +1,8 @@
+{
+  "comparison": "rf_leaf50 minus baseline_mean",
+  "metric": "log_loss",
+  "lower95": -0.1181991748769405,
+  "upper95": -0.09818656423127298,
+  "clusters": 215,
+  "bootstrap": 400
+}
